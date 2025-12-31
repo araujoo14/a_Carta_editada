@@ -95,7 +95,6 @@ h1 {
 }
 
 
-
 .carta {
   max-width:420px;
   line-height:1.9;
@@ -104,12 +103,18 @@ h1 {
   word-wrap: break-word;
   hyphens: auto;
 
-  /* 🔥 FIX DEFINITIVO MOBILE */
   max-height: 100%;
   overflow-y: auto;
   padding-bottom: 40px;
+
+  /* 🔥 ESCONDE SCROLL */
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* Edge antigo */
 }
 
+.carta::-webkit-scrollbar {
+  display: none;                /* Chrome / Safari / mobile */
+}
 
 .carta p {
   margin-bottom:22px;
