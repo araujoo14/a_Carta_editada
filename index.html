@@ -86,7 +86,7 @@ h1 {
   align-items:flex-start;
   padding:64px 20px;
   pointer-events:none;
-  overflow-y:auto;
+  overflow:hidden;
 }
 
 .carta-papel.aberta {
@@ -100,10 +100,14 @@ h1 {
   max-width:420px;
   line-height:1.9;
 
-  /* 🔧 FIX MOBILE */
   overflow-wrap: break-word;
   word-wrap: break-word;
   hyphens: auto;
+
+  /* 🔥 FIX DEFINITIVO MOBILE */
+  max-height: 100%;
+  overflow-y: auto;
+  padding-bottom: 40px;
 }
 
 
@@ -475,6 +479,8 @@ h1 {
 
     <p>Tudo isso é muito especial pra mim...
     <br>────୨ৎ────────୨ৎ────────୨ৎ────────୨ৎ────────୨ৎ────<br>
+   </p>
+
 
     <p>Eu quero continuar vivendo isso com você.<br>
     Quero continuar sendo feliz e experimentando coisas novas ao seu lado.</p>
